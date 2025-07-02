@@ -62,6 +62,16 @@ html, body {
     font-style: normal;
 }
 
-.header-border {
-    
+.header-border-line {
+  color: #000000;
+  margin: 25px 20px;
+}
+
+.header-border-line::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 10%; 
+    border: 2px solid #FFC107;
+    margin-top: 8px;
 }

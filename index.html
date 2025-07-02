@@ -1,254 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Homepage</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant Homepage</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
-        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+        <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
+        <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+            crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="styles.css">
-</head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-<body>
+    <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-navbar navbar-border">
-        <div class="container">
-            <a class="navbar-brand text-menu-beautify" href="#">
-                <img src="assets/pictures/logo_2.png " class="mb-2 mx-2" alt="Logo" width="162" height="45">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-navbar navbar-border">
+            <div class="container">
+                <a class="navbar-brand text-menu-beautify" href="#">
+                    <img src="assets/pictures/logo_2.png " class="mb-2 mx-2"
+                        alt="Logo" width="162" height="45">
 
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end text-menu-beautify" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item mx-1">
-                        <a class="nav-link active text-white" style="font-size: 20px;" aria-current="page"
-                            href="#">Menu</a>
-                    </li>
-                    <li class="nav-item mx-1">
-                        <a class="nav-link text-white" style="font-size: 20px;" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item mx-1">
-                        <a class="nav-link text-white" style="font-size: 20px;" href="#">Locations</a>
-                    </li>
-                    <li class="nav-item mx-1 ">
-                        <a class="nav-link text-white" style="font-size: 20px;" href="#">Contact</a>
-                    </li>
-                    <button type="button" class="btn bg-warning text-bold mx-1" style="font-size: 20px;">Order
-                        Now</button>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Slider -->
-    <div class="container mt-2">
-        <div class="row">
-            <div clas="col">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="50000">
-                            <img src="assets/pictures/sliders/chicken_1.png" class="d-block w-100 rounded-4" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="5000">
-                            <img src="assets/pictures/sliders/chicken_2.png" class="d-block w-100 rounded-4" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="5000">
-                            <img src="assets/pictures/sliders/chicken_3.png" class="d-block w-100 rounded-4" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse justify-content-end text-menu-beautify"
+                    id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-1">
+                            <a class="nav-link active text-white"
+                                style="font-size: 20px;" aria-current="page"
+                                href="#">Menu</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link text-white"
+                                style="font-size: 20px;" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link text-white"
+                                style="font-size: 20px;" href="#">Locations</a>
+                        </li>
+                        <li class="nav-item mx-1 ">
+                            <a class="nav-link text-white"
+                                style="font-size: 20px;" href="#">Contact</a>
+                        </li>
+                        <button type="button"
+                            class="btn bg-warning text-bold mx-1"
+                            style="font-size: 20px;">Order
+                            Now</button>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
+        </nav>
 
-    <div class="content">
-
-        <!-- Title Product -->
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h5 class="mt-4 mx-2 text-header">
-                        Menu
-                        <h5>
-                </div>
-            </div>
-        </div>
-
-        <!-- Start Product -->
+        <!-- Slider -->
         <div class="container mt-2">
-
-            <!-- Start Product 1 -->
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
-                    <div class="card" style="width: 100%;">
-                        <a href="">
-                            <img src="assets/pictures/sliders/chicken_1.jpg" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body bg-card">
-                            <h5 class="card-title">
-                                <a class="link-offset-2 link-underline link-underline-opacity-0 text-warning" href="">
-                                    Original Fried Chicken
-                                </a>
-                            </h5>
-                            <p class="card-text text-white">
-                                Crispy and juicy original fried chicken
-                                <br>
-                                <br>
-                                <br>
-                                <b>฿59.00</b>
-
-                            </p>
+            <div class="row">
+                <div clas="col">
+                    <div id="carouselExampleInterval" class="carousel slide"
+                        data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"
+                                data-bs-interval="50000">
+                                <img src="assets/pictures/sliders/chicken_1.png"
+                                    class="d-block w-100 rounded-4" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="assets/pictures/sliders/chicken_2.png"
+                                    class="d-block w-100 rounded-4" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="assets/pictures/sliders/chicken_3.png"
+                                    class="d-block w-100 rounded-4" alt="...">
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Start Product 2 -->
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
-                    <div class="card" style="width: 100%;">
-                        <a href="">
-                            <img src="assets/pictures/sliders/chicken_2.jpg" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body bg-card">
-                            <h5 class="card-title">
-                                <a class="link-offset-2 link-underline link-underline-opacity-0 text-warning" href="">
-                                    Fried chicken salsa sauce
-                                </a>
-                            </h5>
-                            <p class="card-text text-white">
-                                Tender fried chicken with salsa sauce
-                                <br>
-                                <br>
-                                <br>
-                                <b>฿79.00</b>
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Start Product 3 -->
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
-                    <div class="card" style="width: 100%;">
-                        <a href="">
-                            <img src="assets/pictures/sliders/chicken_3.jpg" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body bg-card">
-                            <h5 class="card-title">
-                                <a class="link-offset-2 link-underline link-underline-opacity-0 text-warning" href="">
-                                    DrumSchick & Fried
-                                </a>
-                            </h5>
-                            <p class="card-text text-white">
-                                4 Chicken Drumsticks with Fried
-                                <br>
-                                <br>
-                                <br>
-                                <b>฿149.00</b>
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Start Product 4 -->
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
-                    <div class="card" style="width: 100%;">
-                        <a href="">
-                            <img src="assets/pictures/sliders/chicken_3.jpg" class="card-img-top" alt="...">
-                        </a>
-                        <div class="card-body bg-card">
-                            <h5 class="card-title">
-                                <a class="link-offset-2 link-underline link-underline-opacity-0 text-warning" href="">
-                                    DrumSchick & Fried (Deluxe)
-                                </a>
-                            </h5>
-                            <p class="card-text text-white">
-                                4 Chicken Drumsticks with Fried
-                                <br>
-                                1 Soda Pop
-                                <br>
-                                <br>
-                                <b>฿179.00</b>
-                            </p>
-                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <footer class="d-flex justify-content-center" style="background-color: #202124;">
-        <div class="d-flex max-w-960 flex-column w-100">
-            <footer class="d-flex flex-column gap-4 px-5 py-5 text-center">
+        <div class="content">
 
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="#">
-                        <div class="text-warning">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                                viewBox="0 0 256 256">
-                                <path
-                                    d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
-                                </path>
-                            </svg>
+            <!-- Title Product -->
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="mt-4 mx-2 header-border-line">
+                            Recommended
+                            <h4>
+                            </div>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="text-warning">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                                viewBox="0 0 256 256">
-                                <path
-                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
-                                </path>
-                            </svg>
+                    </div>
+
+                    <!-- Start Product -->
+                    <div class="container mt-2">
+
+                        <!-- Start Product 1 -->
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                <div class="card" style="width: 100%;">
+                                    <a href>
+                                        <img
+                                            src="assets/pictures/sliders/chicken_1.jpg"
+                                            class="card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body bg-card">
+                                        <h5 class="card-title">
+                                            <a
+                                                class="link-offset-2 link-underline link-underline-opacity-0 text-warning"
+                                                href>
+                                                Original Fried Chicken
+                                            </a>
+                                        </h5>
+                                        <p class="card-text text-white">
+                                            Crispy and juicy original fried
+                                            chicken
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <b>฿59.00</b>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Product 2 -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                <div class="card" style="width: 100%;">
+                                    <a href>
+                                        <img
+                                            src="assets/pictures/sliders/chicken_2.jpg"
+                                            class="card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body bg-card">
+                                        <h5 class="card-title">
+                                            <a
+                                                class="link-offset-2 link-underline link-underline-opacity-0 text-warning"
+                                                href>
+                                                Fried chicken salsa sauce
+                                            </a>
+                                        </h5>
+                                        <p class="card-text text-white">
+                                            Tender fried chicken with salsa
+                                            sauce
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <b>฿79.00</b>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Product 3 -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                <div class="card" style="width: 100%;">
+                                    <a href>
+                                        <img
+                                            src="assets/pictures/sliders/chicken_3.jpg"
+                                            class="card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body bg-card">
+                                        <h5 class="card-title">
+                                            <a
+                                                class="link-offset-2 link-underline link-underline-opacity-0 text-warning"
+                                                href>
+                                                DrumSchick & Golden Fried
+                                            </a>
+                                        </h5>
+                                        <p class="card-text text-white">
+                                            4 Chicken Drumsticks with Fried
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <b>฿149.00</b>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Start Product 4 -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                <div class="card" style="width: 100%;">
+                                    <a href>
+                                        <img
+                                            src="assets/pictures/sliders/chicken_3.jpg"
+                                            class="card-img-top" alt="...">
+                                    </a>
+                                    <div class="card-body bg-card">
+                                        <h5 class="card-title">
+                                            <a
+                                                class="link-offset-2 link-underline link-underline-opacity-0 text-warning"
+                                                href>
+                                                DrumSchick & Fried (Deluxe)
+                                            </a>
+                                        </h5>
+                                        <p class="card-text text-white">
+                                            4 Chicken Drumsticks with Fried
+                                            <br>
+                                            1 Soda Pop
+                                            <br>
+                                            <br>
+                                            <b>฿179.00</b>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="text-warning">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
-                                viewBox="0 0 256 256">
-                                <path
-                                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
-                                </path>
-                            </svg>
-                        </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="d-flex flex-wrap justify-content-center gap-4">
-                    <a class="text-warning text-decoration-none fs-6" href="#">Privacy Policy</a>
-                    <a class="text-warning text-decoration-none fs-6" href="#">Terms of Service</a>
+
+                <div class="container py-5">
+                    <h4 class="mb-4 mx-0 header-border-line">Specials Menu</h4>
+
+                    <div class="row">
+                        <!-- 1 -->
+                        <div class="col-md-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h6 class="fw-bold">Classic Fried
+                                        Chicken</h6>
+                                    <p class="text-muted mb-2">Our signature
+                                        crispy fried chicken, seasoned to
+                                        perfection.</p>
+                                    <button
+                                        class="btn btn-outline-secondary btn-sm">Order
+                                        Now</button>
+                                </div>
+                                <div class="col-4">
+                                    <img
+                                        src="assets/pictures/showcases/showcase_1.jpg"
+                                        class="img-fluid rounded"
+                                        alt="Classic Fried Chicken">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 1.1 -->
+                        <div class="col-md-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h6 class="fw-bold">Conqueror's Burger</h6>
+                                    <p class="text-muted mb-2">Juicy chicken
+                                        with special sauce, lettuce, and
+                                        tomato.</p>
+                                    <button
+                                        class="btn btn-outline-secondary btn-sm">Order
+                                        Now</button>
+                                </div>
+                                <div class="col-4">
+                                    <img
+                                        src="assets/pictures/showcases/showcase_2.jpg"
+                                        class="img-fluid rounded"
+                                        alt="Conqueror's Burger">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="col-md-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h6 class="fw-bold">Spicy Chicken Wings</h6>
+                                    <p class="text-muted mb-2">Hot and crispy
+                                        chicken wings with a spicy kick.</p>
+                                    <button
+                                        class="btn btn-outline-secondary btn-sm">Order
+                                        Now</button>
+                                </div>
+                                <div class="col-4">
+                                    <img
+                                        src="assets/pictures/showcases/showcase_3.jpg"
+                                        class="img-fluid rounded"
+                                        alt="Spicy Chicken Wings">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2.1 -->
+                        <div class="col-md-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h6 class="fw-bold">Conqueror's Double cheese burger</h6>
+                                    <p class="text-muted mb-2">
+                                        Just double cheese!!</p>
+                                    <button
+                                        class="btn btn-outline-secondary btn-sm">Order
+                                        Now</button>
+                                </div>
+                                <div class="col-4">
+                                    <img
+                                        src="assets/pictures/showcases/showcase_4.jpg"
+                                        class="img-fluid rounded"
+                                        alt="Spicy Chicken Wings">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-warning fs-6 mb-0">@2025 Conqueror's. All
-                    rights
-                    reserved.</p>
-            </footer>
-        </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+                <footer class="d-flex justify-content-center"
+                    style="background-color: #202124;">
+                    <div class="d-flex max-w-960 flex-column w-100">
+                        <footer
+                            class="d-flex flex-column gap-4 px-5 py-5 text-center">
 
-</body>
+                            <div
+                                class="d-flex flex-wrap justify-content-center gap-3">
+                                <a href="#">
+                                    <div class="text-warning">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24px" height="24px"
+                                            fill="currentColor"
+                                            viewBox="0 0 256 256">
+                                            <path
+                                                d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="text-warning">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24px" height="24px"
+                                            fill="currentColor"
+                                            viewBox="0 0 256 256">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="text-warning">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24px" height="24px"
+                                            fill="currentColor"
+                                            viewBox="0 0 256 256">
+                                            <path
+                                                d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="d-flex flex-wrap justify-content-center gap-4">
+                                <a
+                                    class="text-warning text-decoration-none fs-6"
+                                    href="#">Privacy Policy</a>
+                                <a
+                                    class="text-warning text-decoration-none fs-6"
+                                    href="#">Terms of Service</a>
+                            </div>
+                            <p class="text-warning fs-6 mb-0">@2025 Conqueror's.
+                                All
+                                rights
+                                reserved.</p>
+                        </footer>
+                    </div>
+                </footer>
 
-</html>
+                <script
+                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+                    crossorigin="anonymous"></script>
+
+            </body>
+
+        </html>
